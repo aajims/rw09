@@ -1,0 +1,51 @@
+<template>
+    <div class="text-center">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 rounded-md">
+            <div class="text-xl font-bold text-slate-100 my-6">Agenda Kegiatan RW 09</div>
+            <div class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
+                <div class="w-full relative p-4 mx-2 bg-slate-50 rounded-xl" v-for="row in kegiatanList.data" :key="row.id">
+                    <h3 class="text-xl font-bold text-blue-800 pt-2">{{ row.nama_agenda }}</h3>
+                    <div class="text-center">
+                        <div class="py-2">
+                            <h3 class="font-bold text-sm text-blue-400 mb-1">{{ row.waktu }}</h3>
+                            <div class="inline-flex text-gray-700 dark:text-gray-500 items-center">
+                                {{ row.lokasi }}
+                            </div>
+                            <nuxt-link :to="'/galery-foto/' + row.id">
+                                <div class="my-5 text-slate-50">
+                                    <button class="rounded-full bg-blue-500 py-1 px-4">Gallery Foto</button>
+                                </div>
+                            </nuxt-link>
+                        </div>
+                    </div>
+                    <div class="absolute right-3 bottom-3 text-xs">
+                            {{ row.agenda_kategori }}
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import { getAllKegiatan } from '@/api/kegiatanService';
+
+    export default {
+        data() {
+            return {
+            BaseAPI: process.env.API_URL,
+            BaseIMG: 'https://be.rw09sukamulya.com/public',
+            kegiatanList: [],
+            };
+        },
+        mounted() {
+            this.loadKegiatan();
+        },
+        methods: {
+            async loadKegiatan() {
+            this.kegiatanList = await getAllKegiatan();
+            },
+        },
+    }
+
+</script>
