@@ -52,6 +52,10 @@
         {
           label: 'Pengeluaran',
           field: 'pengeluaran',
+        },
+        {
+          label: 'Keterangan',
+          field: 'keterangan',
         }
         ],
         rows: [

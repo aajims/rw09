@@ -5,8 +5,8 @@
       <img class="max-h-[200px] w-full object-cover" src="../public/assets/img/bg-head.jpg" />
       <div class="fixed left-0 z-20 h-[60px] w-full transition delay-150 ease-in-out bg-transparent">
       </div>
-      <div class="absolute top-20 left-4 translate-y-3/4 xs:translate-y-[100%]">
-          <h3 class="mb-3 w-40 md:w-56 text-xs md:text-[18px] font-bold text-blue-50 leading-6">Data Informasi kegiatan lingkungan RW 09</h3>
+      <div class="absolute top-5 md:top-8 left-6 translate-y-3/4 xs:translate-y-[100%]">
+          <h3 class="mb-3 w-48 md:w-64 text-xs md:text-[18px] font-bold text-blue-50 leading-6">Data Informasi kegiatan Lingkungan RW 09 Sukamulya Cikupa Tangerang</h3>
         </div>
     </div>
     <nuxt/>
