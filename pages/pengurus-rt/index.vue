@@ -11,7 +11,7 @@
                     <h3 class="text-xl font-bold text-blue-800 pt-2">Pengurus {{ row.nama }}</h3>
                     <div class="border-b px-1 md:px-4 pb-1">
                         <div class="flex md:block md:text-center my-4">
-                            <img :src="BaseIMG + '/' +row.foto" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 mx-auto" />
+                            <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' +row.foto" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 mx-auto" />
                             <div class="py-2 pl-4 md:pl-0 text-left md:text-center">
                                 <h3 class="font-bold text-2xl text-blue-400 mb-1">{{ row.ketua }}</h3>
                                 <div class="inline-flex text-gray-700 dark:text-gray-500 text-left md:items-center">
@@ -47,6 +47,9 @@ import { getAllRt } from '@/api/rtService';
             this.loadRt();
         },
         methods: {
+            onImageLoadFailure (event) {
+                event.target.src = "assets/img/human_icon.png"   
+            },
             async loadRt() {
             this.rtList = await getAllRt();
             },
