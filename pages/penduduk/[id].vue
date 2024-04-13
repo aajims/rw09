@@ -1,5 +1,12 @@
 <template>
     <div class="text-center">
+        <Head>
+            <Title>Data Penduduk di RW 09 Sukamulya Cikupa Tangerang</Title>
+            <Meta
+            name="description"
+            content="data penduduk di lingkungan RW 09 Sukamulya kecamatan cikupa Tangerang"
+            />
+        </Head>
         <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid p-8 rounded-md">
             <div class="text-xl font-bold text-slate-100 my-6">Data Penduduk di RW 09</div>
             <div class="border-t border-gray-200 p-1 md:px-10 md:mx-6 rounded-md bg-slate-100 py-5 mb-2">
