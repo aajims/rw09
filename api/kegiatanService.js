@@ -1,4 +1,4 @@
-const API_URL = 'https://be.rw09sukamulya.com/api'; 
+const API_URL = import.meta.env.VITE_API_URL; 
 
 export async function getAllKegiatan() {
   const response = await fetch(`${API_URL}/agenda`);

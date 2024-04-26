@@ -1,4 +1,5 @@
 <template>
+  <div class="mb-3"><h5><b>Gallery Foto Kegiatan</b></h5></div>
    <swiper
     :modules="modules"
     :slides-per-view="2"
@@ -35,7 +36,7 @@
     data() {
             return {
             BaseAPI: process.env.API_URL,
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
+            BaseIMG: import.meta.env.VITE_API_IMG,
             slideList: [],
             };
         },
@@ -53,10 +54,10 @@
     },
     setup() {
       const onSwiper = (swiper) => {
-        console.log(swiper);
+        // console.log(swiper);
       };
       const onSlideChange = () => {
-        console.log('slide change');
+        // console.log('slide change');
       };
       return {
         onSwiper,

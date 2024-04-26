@@ -127,8 +127,8 @@ import { viewPenduduk } from '@/api/pendudukService';
     export default {
         data() {
             return {
-            BaseAPI: process.env.API_URL,
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
+            
+            BaseIMG: import.meta.env.VITE_API_IMG,
             nama_lengkap: null,
             alamat: null,
             rt: null,

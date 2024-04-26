@@ -26,7 +26,7 @@
     export default {
         data() {
             return {
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
+            BaseIMG: import.meta.env.VITE_API_IMG,
             fotoList: [],
             current_page: 1,
             per_page: 15,

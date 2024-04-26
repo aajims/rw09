@@ -1,4 +1,4 @@
-const API_URL = 'https://be.rw09sukamulya.com/api'; 
+const API_URL = import.meta.env.VITE_API_URL; 
 
 export async function getAllFoto() {
   const response = await fetch(`${API_URL}/foto?page=${this.currentPage}&limit=15`);
