@@ -23,7 +23,7 @@
         </div>
         <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md">
             <div class="tex-sm md:text-xl font-bold text-slate-100 mt-6 mb-2">Jadwal Pertandingan Bola Volley </div>
-            <div class="text-xs md:text-sm font-bold text-slate-100 my-3"><p>Lokasi : {{ lokasi }}</p></div>
+            <!-- <div class="text-xs md:text-sm font-bold text-slate-100 my-3"><p>Lokasi : {{ lokasi }}</p></div> -->
             <vue-good-table
             :columns="columns"
             :rows="rows"
@@ -46,8 +46,7 @@
 <script>
     import 'vue-good-table-next/dist/vue-good-table-next.css'
     import { VueGoodTable } from 'vue-good-table-next';
-    import { getVolley, getAllCabor, getVolleyLocation } from '@/api/caborService';
-    // import { getAllCabor } from '@/api/caborService';
+    import { getVolley, getAllCabor } from '@/api/caborService';
     import moment from 'moment';
 
     export default {
@@ -92,7 +91,7 @@
         async mounted() {
             await this.loadData();
             await this.loadCabor();
-            await this.location();
+            // await this.location();
         },
         methods: {
             format_date(value){
