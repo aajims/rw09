@@ -10,7 +10,7 @@
         <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md">
             <div class="text-xl font-bold text-slate-100 my-6">Petugas Security di RW 09</div>
             <div class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
-                <div class="w-full p-2 mx-2 bg-slate-50 rounded-xl" v-for="row in rwList.data" :key="row.id">
+                <div class="w-full p-2 mx-2 bg-slate-50 rounded-xl" v-for="row in petugaList.data" :key="row.id">
                     <h3 class="text-xl font-bold text-blue-800 pt-2">{{ row.name }}</h3>
                     <div class="border-b px-4 pb-1">
                         <div class="text-center my-4">
@@ -35,21 +35,21 @@ import { getAllSecurity } from '@/api/securityService';
     export default {
         data() {
             return {
-            BaseAPI: process.env.API_URL,
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
-            rwList: [],
+            BaseIMG: import.meta.env.VITE_API_IMG,
+            petugaList: { data: [] }, // Inisialisasi petugaList dengan data array kosong
             };
         },
         mounted() {
-            this.loadRw();
+            this.loadPetugas();
         },
         methods: {
             onImageLoadFailure (event) {
                 event.target.src = "assets/img/human_icon.png"   
             },
-            async loadRw() {
-            this.rwList = await getAllSecurity();
+            async loadPetugas() {
+            this.petugaList = await getAllSecurity();
             },
         },
     }
 </script>
+

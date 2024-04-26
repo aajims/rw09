@@ -14,11 +14,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  runtimeConfig: {
-    public: {
-      API_BASE_URL: process.env.API_URL || 'https://api.example.com/',
-    },
-  },
+  // runtimeConfig: {
+  //   public: {
+  //     API_BASE_URL: process.env.API_URL || 'https://api.example.com/',
+  //   },
+  // },
   modules: [
     // '@nuxtjs/axios'
   ],

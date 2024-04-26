@@ -35,8 +35,8 @@ import { getAllRw } from '@/api/rwService';
     export default {
         data() {
             return {
-            BaseAPI: process.env.API_URL,
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
+            
+            BaseIMG: import.meta.env.VITE_API_IMG,
             rwList: [],
             };
         },

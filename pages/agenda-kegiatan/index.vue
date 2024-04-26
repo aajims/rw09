@@ -2,14 +2,15 @@
     <div class="text-center">
         <Head>
         <Title>Agenda Kegiatan lingkungan di RW 09 Sukamulya Cikupa Tangerang</Title>
-        <Meta
+        <meta
           name="description"
           content="agenda kegiatan di lingkungan RW 09 Sukamulya kecamatan Cikupa Tangerang"
         />
+        
       </Head>
         <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 rounded-md">
             <div class="text-xl font-bold text-slate-100 my-6">Agenda Kegiatan RW 09</div>
-            <div class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
+            <div v-if="kegiatanList.data && kegiatanList.data.length > 0" class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
                 <div class="w-full relative p-4 mx-2 bg-slate-50 rounded-xl" v-for="row in kegiatanList.data" :key="row.id">
                     <h3 class="text-xl font-bold text-blue-800 pt-2">{{ row.nama_agenda }}</h3>
                     <div class="text-center">
@@ -40,9 +41,8 @@ import { getAllKegiatan } from '@/api/kegiatanService';
     export default {
         data() {
             return {
-            BaseAPI: process.env.API_URL,
-            BaseIMG: 'https://be.rw09sukamulya.com/public',
-            kegiatanList: [],
+            BaseIMG: import.meta.env.VITE_API_IMG,
+            kegiatanList: { data: [] }, // Pastikan ini sesuai dengan struktur data dari API
             };
         },
         mounted() {
