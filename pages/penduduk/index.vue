@@ -1,10 +1,10 @@
 <template>
     <div class="text-center">
       <Head>
-        <Title>Data Penduduk di RW 09 Sukamulya Cikupa Tangerang</Title>
+        <Title>Data Penduduk di RW 09 mulya asri 2 Sukamulya Cikupa Tangerang</Title>
         <Meta
           name="description"
-          content="data penduduk di lingkungan RW 09 Sukamulya kecamatan Cikupa Tangerang"
+          content="data penduduk RW 09 mulya asri 2 Sukamulya kecamatan Cikupa Tangerang"
         />
       </Head>
         <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md">

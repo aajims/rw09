@@ -106,7 +106,7 @@
           <span class="px-1 text-center text-[10px] md:text-xs font-bold">Kegiatan Olahraga</span>
         </div>
       </nuxt-link>
-      <nuxt-link to="/">
+      <nuxt-link to="/dokumen">
         <div class="flex flex-col items-center py-3">
           <div class="mb-2 flex h-8 md:h-12 w-8 md:w-12 justify-end">
             <div class="inline-block h-[38px] md:h-[46px] w-[38px] md:w-[46px]">
