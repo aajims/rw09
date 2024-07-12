@@ -1,10 +1,10 @@
 <template>
     <div class="text-center">
         <Head>
-        <Title>Agenda Kegiatan lingkungan di RW 09 Sukamulya Cikupa Tangerang</Title>
+        <Title>Agenda Kegiatan lingkungan di RW 09 mulya asri 2 Sukamulya Cikupa Tangerang</Title>
         <meta
           name="description"
-          content="agenda kegiatan di lingkungan RW 09 Sukamulya kecamatan Cikupa Tangerang"
+          content="agenda kegiatan di lingkungan RW 09 mulya asri 2 Sukamulya kecamatan Cikupa Tangerang"
         />
         
       </Head>

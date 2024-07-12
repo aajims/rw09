@@ -1,10 +1,10 @@
 <template>
     <div class="text-center">
         <Head>
-            <Title>Data Cabang Olahraga di RW 09 Sukamulya Cikupa</Title>
+            <Title>Data Cabang Olahraga di RW 09 mulya asri 2 Sukamulya Cikupa</Title>
             <Meta
             name="description"
-            content="data Cabang Olahraga lingkungan RW 09 Sukamulya kecamatan cikupa Tangerang"
+            content="data Cabang Olahraga lingkungan RW 09 mulya asri 2 Sukamulya kecamatan cikupa Tangerang"
             />
         </Head>
         <div class="text-xl font-bold text-slate-700 my-6">Daftar Cabang Olahraga di RW 09</div>

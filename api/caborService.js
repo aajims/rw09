@@ -4,7 +4,7 @@ export async function getAllCabor() {
   const response = await fetch(`${API_URL}/cabor`);
   const data = await response.json();
   return data;
-}
+} 
 
 export async function getVolley() {
     const response = await fetch(`${API_URL}/volley`);
