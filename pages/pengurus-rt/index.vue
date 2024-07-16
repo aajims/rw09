@@ -7,7 +7,7 @@
           content="data pengurus RT di RW 09 mulya asri 2 Sukamulya kecamatan cikupa Tangerang"
         />
       </Head>
-        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid p-8 rounded-md">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid p-8 rounded-md mb-11">
             <div class="mb-6">
                 <p class="text-xl text-slate-50 font-bold text-center">
                 Data Pengurus RT di RW 09

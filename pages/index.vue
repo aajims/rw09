@@ -124,7 +124,7 @@
     <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-3 md:px-6 rounded-md">
       <div class=" text-sm md:text-xl font-bold text-slate-800 my-6">Petugas Security Hari ini : {{ currentDate }} Jam : {{ currentTime }}</div>
       <div class="grid grid-cols-2 gap-3 ">
-            <div class="w-full mx-2 bg-slate-50 rounded-xl" v-for="row in petugaList" :key="row.id">
+            <div class="w-full mr-6 bg-slate-50 rounded-xl" v-for="row in petugaList" :key="row.id">
                 <div class="border-b px-1 pb-1">
                     <div class="flex md:block md:text-center my-2">
                         <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' + row.foto" alt="foto" class="h-14 w-14 md:h-20 md:w-20 rounded-full border-4 border-white dark:border-gray-200 mx-auto" />

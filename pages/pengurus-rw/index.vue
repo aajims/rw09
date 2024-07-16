@@ -7,7 +7,7 @@
             content="data pengurus RW 09 mulya asri 2 Sukamulya kecamatan cikupa Tangerang"
             />
         </Head>
-        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md mb-11">
             <div class="text-xl font-bold text-slate-100 my-6">Data Pengurus RW 09</div>
             <div class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
                 <div class="w-full p-2 mx-2 bg-slate-50 rounded-xl" v-for="row in rwList.data" :key="row.id">
