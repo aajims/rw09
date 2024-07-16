@@ -8,10 +8,10 @@
         />
         
       </Head>
-        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 rounded-md">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 pb-7 rounded-md mb-14">
             <div class="text-xl font-bold text-slate-100 my-6">Agenda Kegiatan RW 09</div>
             <div v-if="kegiatanList.data && kegiatanList.data.length > 0" class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
-                <div class="w-full relative p-4 mx-2 bg-slate-50 rounded-xl" v-for="row in kegiatanList.data" :key="row.id">
+                <div class="w-full relative p-4 mr-6 bg-slate-50 rounded-xl" v-for="row in kegiatanList.data" :key="row.id">
                     <h3 class="text-xl font-bold text-blue-800 pt-2">{{ row.nama_agenda }}</h3>
                     <div class="text-center">
                         <div class="py-2">

@@ -7,14 +7,20 @@
                 enabled: true
             }">
             <template #table-row="props">
-              <span v-if="props.column.field == 'tanggal'">
+              <span style="font-size: 11px;" v-if="props.column.field == 'tanggal'">
                 <span>{{ format_date(props.row.tanggal) }}</span> 
               </span>
+              <span v-else-if="props.column.field == 'kategori_keuangan.nama_kategori'">
+                <span style="font-size: 11px">{{ props.row.kategori_keuangan.nama_kategori }}</span> 
+              </span>
+              <span v-else-if="props.column.field == 'keterangan'">
+                <span style="font-size: 11px">{{ props.row.keterangan }}</span> 
+              </span>
               <span v-else-if="props.column.field == 'pemasukan'">
-                <span style="font-weight: bold; color: blue;">{{ formatPrice(props.row.pemasukan) }}</span> 
+                <span style="font-size: 11px; font-weight: bold; color: blue;">Rp. {{ formatPrice(props.row.pemasukan) }}</span> 
               </span>
               <span v-else-if="props.column.field == 'pengeluaran'">
-                <span style="font-weight: bold; color: blue;">{{ formatPrice(props.row.pengeluaran) }}</span> 
+                <span style="font-size: 11px; font-weight: bold; color: blue;">Rp. {{ formatPrice(props.row.pengeluaran) }}</span> 
               </span>
               <span v-else>
                 {{props.formattedRow[props.column.field]}}
@@ -40,22 +46,27 @@
         {
           label: 'Tanggal',
           field: 'tanggal',
+          className: 'tanggal-header',
         },
         {
           label: 'Kategori',
           field: 'kategori_keuangan.nama_kategori',
+          className: 'tanggal-header',
         },
         {
-          label: 'Pemasukan',
+          label: 'Debet',
           field: 'pemasukan',
+          className: 'tanggal-header',
         },
         {
-          label: 'Pengeluaran',
+          label: 'Kredit',
           field: 'pengeluaran',
+          className: 'tanggal-header',
         },
         {
           label: 'Keterangan',
           field: 'keterangan',
+          className: 'tanggal-header',
         }
         ],
         rows: [
@@ -85,4 +96,8 @@
     },
   };
   </script>
-  
+  <style scoped>
+  .vue-good-table .vgt-table thead .tanggal-header {
+    font-size: 12px;
+  }
+  </style>

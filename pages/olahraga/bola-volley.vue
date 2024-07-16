@@ -21,7 +21,7 @@
                 </div>
             </div>
         </div>
-        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid py-2 px-6 rounded-md mb-11">
             <div class="tex-sm md:text-xl font-bold text-slate-100 mt-6 mb-2">Jadwal Pertandingan Bola Volley </div>
             <!-- <div class="text-xs md:text-sm font-bold text-slate-100 my-3"><p>Lokasi : {{ lokasi }}</p></div> -->
             <vue-good-table
@@ -31,8 +31,20 @@
                 enabled: true
             }">
             <template #table-row="props">
-              <span v-if="props.column.field == 'waktu'">
+                <span style="font-size: 12px;" v-if="props.column.field == 'waktu'">
                 <span>{{ format_date(props.row.waktu) }}</span> 
+              </span>
+              <span style="font-size: 12px;" v-else-if="props.column.field == 'cabors.name'">
+                <span>{{ props.row.cabors.name }}</span> 
+              </span>
+              <span style="font-size: 12px;" v-else-if="props.column.field == 'team_a'">
+                <span>{{ props.row.team_a }}</span> 
+              </span>
+              <span style="font-size: 12px;" v-else-if="props.column.field == 'team_b'">
+                <span>{{ props.row.team_b }}</span> 
+              </span>
+              <span style="font-size: 12px;" v-else-if="props.column.field == 'score'">
+                <span>{{ props.row.score }}</span> 
               </span>
               <span v-else>
                 {{props.formattedRow[props.column.field]}}

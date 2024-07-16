@@ -20,9 +20,9 @@
                 <span class="px-1 text-left text-[10px] md:text-xs font-bold text-white">Back Dokumen</span>
                 </div>
             </nuxt-link>
-            <div class="text-2xl font-bold text-slate-100 my-3">{{ title }}</div>
+            <div class="text-xl md:text-2xl font-bold text-slate-100 my-3">{{ title }}</div>
             <div class="w-full">
-                <embed class="w-full h-[711px]" :src="BaseIMG + '/' + file"  />
+                <iframe class="w-full h-full" :src="BaseIMG + '/' + file" style="min-height: 500px;"></iframe>
             </div>
         </div>
     </div>
