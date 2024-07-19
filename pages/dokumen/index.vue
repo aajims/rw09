@@ -8,9 +8,9 @@
         />
         
       </Head>
-        <div class="h-[551px] bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 rounded-md mb-11">
+        <div class="h-full bg-gradient-to-r from-cyan-500 to-blue-500 border-solid px-4 pt-1 rounded-md mb-11 pb-11">
             <div class="text-xl font-bold text-slate-100 my-6">Tata Tertib dan AD/ART di RW 09</div>
-            <div v-if="DokumenList.data && DokumenList.data.length > 0" class="grid-cols-1 grid md:grid-cols-2 gap-3 ">
+            <div v-if="DokumenList.data && DokumenList.data.length > 0" class="grid-cols-1 grid md:grid-cols-2 gap-3 mb-7">
                 <div class="w-full relative p-4 mx-2 bg-slate-50 rounded-xl" v-for="row in DokumenList.data" :key="row.id">
                     <h3 class="text-sm md:text-xl font-bold text-blue-800 pt-2">{{ row.title }}</h3>
                     <div class="text-center">
