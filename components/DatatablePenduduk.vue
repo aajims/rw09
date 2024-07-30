@@ -33,31 +33,14 @@
         columns: [ 
         {
           label: 'RT',
-          field: 'rts.nama',
+          field: 'rt',
         },
         {
-          label: 'Nama',
+          label: 'Jumlah KK',
           field: 'nama_lengkap',
-        },
-        {
-          label: 'Gender',
-          field: 'jk',
-        },
-        {
-          label: 'Agama',
-          field: 'agama',
-        },
-        {
-          label: 'Status',
-          field: 'status_perkawinan',
-        },
-       {
-        label: 'Action',
-        field: 'actions'
-       }
+        }
         ],
-        rows: [
-        ], // Data tabel
+        rows: [], 
         paginationOptions: {
           enabled: true,
           perPage: 10, // Jumlah item per halaman

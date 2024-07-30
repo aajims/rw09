@@ -46,6 +46,5 @@ import { getAllDokumen } from '@/api/dokumenService';
             this.DokumenList = await getAllDokumen();
             },
         },
-    }
-
+    };
 </script>
