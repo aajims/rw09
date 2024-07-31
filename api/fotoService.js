@@ -9,7 +9,7 @@ export async function getAllFoto() {
 export async function getFoto(current_page, per_page) {
   const response = await fetch(`${API_URL}/foto?page=${current_page}&pageSize=${per_page}`);
   const data = await response.json();
-  return data;
+  return data.data.data;
 }
 
 export async function viewFoto(id) {

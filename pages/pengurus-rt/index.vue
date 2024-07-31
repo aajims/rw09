@@ -48,7 +48,6 @@ import { getAllRt } from '@/api/rtService';
     export default {
         data() {
             return {
-            
             BaseIMG: import.meta.env.VITE_API_IMG,
             rtList: [],
             };
