@@ -15,7 +15,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt23 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt23 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -24,7 +24,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt24 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt24 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -33,7 +33,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt25 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt25 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -42,7 +42,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt26 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt26 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -51,7 +51,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt27 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt27 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -60,7 +60,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt28 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt28 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -69,7 +69,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt29 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt29 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -78,7 +78,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt41 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt41 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>
@@ -87,7 +87,7 @@
                   <div class="text-center">
                       <div class="pt-0">
                         <div class="tex-sm font-bold text-black py-4">Total Data KK</div>
-                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-3/5">{{ rt48 }} &nbsp;KK</div>
+                        <div class="text-md mx-auto text-white font-bold rounded-full bg-blue-500 py-1 px-3 w-full md:w-3/5">{{ rt48 }} &nbsp;KK</div>
                       </div>
                   </div>
               </div>

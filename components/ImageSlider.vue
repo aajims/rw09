@@ -7,6 +7,7 @@
     navigation
     :pagination="{ clickable: true }"
     :scrollbar="{ draggable: true }"
+    :autoplay="{ delay: 3500 }"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
   >
@@ -22,7 +23,7 @@
 </template>
 <script>
   // Import Swiper Vue.js components
-  import { Parallax, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+  import { Parallax, Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
   import { Swiper, SwiperSlide } from 'swiper/vue';
 
   // Import Swiper styles
@@ -62,7 +63,7 @@
       return {
         onSwiper,
         onSlideChange,
-        modules: [ Parallax,  Navigation, Pagination, Scrollbar, A11y],
+        modules: [ Parallax,  Navigation, Pagination, Scrollbar, A11y, Autoplay],
       };
     },
   };

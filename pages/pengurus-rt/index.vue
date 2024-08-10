@@ -18,21 +18,30 @@
                     <h3 class="text-xl font-bold text-blue-800 pt-2">Pengurus {{ row.nama }}</h3>
                     <div class="border-b px-1 md:px-4 pb-1">
                         <div class="flex md:block md:text-center my-4">
-                            <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' +row.foto" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 mx-auto" />
-                            <div class="py-2 text-left md:text-center">
+                            <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' +row.foto" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 ml-3 md:mx-auto" />
+                            <div class="py-2 ml-5 md:ml-0 text-left md:text-center">
                                 <h3 class="font-bold text-lg md:text-xl text-blue-800 mb-1">{{ row.ketua }}</h3>
                                 <div class="inline-flex text-gray-700 dark:text-gray-500 text-left md:items-center">
-                                    Ketua {{ row.nama }}
+                                    Ketua RT
                                 </div>
-                               
                             </div>
                         </div>
-                        <div class="mt-1 text-left md:text-center ml-8 md:ml-0">
-                            <div class="py-2">
-                                Sekertaris : {{ row.sekertaris }}
+                        <div class="flex md:block md:text-center my-4">
+                            <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' +row.foto1" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 ml-3 md:mx-auto" />
+                            <div class="py-2 ml-5 md:ml-0 text-left md:text-center">
+                                <h3 class="font-bold text-lg md:text-xl text-blue-800 mb-1">{{ row.sekertaris }}</h3>
+                                <div class="inline-flex text-gray-700 dark:text-gray-500 text-left md:items-center">
+                                    Sekertaris
+                                </div>
                             </div>
-                            <div class="py-2">
-                                Bendahara : {{ row.bendahara }}
+                        </div>
+                        <div class="flex md:block md:text-center my-4">
+                            <img @error="onImageLoadFailure($event)" :src="BaseIMG + '/' +row.foto2" alt="foto" class="h-24 w-24 rounded-full border-4 border-white dark:border-gray-200 ml-3 md:mx-auto" />
+                            <div class="py-2 ml-5 md:ml-0 text-left md:text-center">
+                                <h3 class="font-bold text-lg md:text-xl text-blue-800 mb-1">{{ row.bendahara }}</h3>
+                                <div class="inline-flex text-gray-700 dark:text-gray-500 text-left md:items-center">
+                                    Bendahara
+                                </div>
                             </div>
                         </div>
                     </div>
