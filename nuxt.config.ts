@@ -6,6 +6,9 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
     }
   },
+  devServer: {
+    port: 3020
+  },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {
